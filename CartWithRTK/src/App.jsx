@@ -1,13 +1,19 @@
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
 import "./App.css";
-// import { Product } from "./components/Product";
-import HomePage from "./pages/Home";
-const App = () => {
+function App() {
   return (
-    <>
-<HomePage/>
-      {/* <Product /> */}
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
+
