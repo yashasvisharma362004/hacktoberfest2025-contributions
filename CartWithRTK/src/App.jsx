@@ -1,12 +1,11 @@
-import { Header } from "./components/Header";
 import "./App.css";
-import { Product } from "./components/Product";
+// import { Product } from "./components/Product";
+import HomePage from "./pages/Home";
 const App = () => {
   return (
     <>
-      <Header />
-
-      <Product />
+<HomePage/>
+      {/* <Product /> */}
     </>
   );
 };
